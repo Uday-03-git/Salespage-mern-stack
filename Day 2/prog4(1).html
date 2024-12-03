@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: black; /* Default text color for all paragraphs */
+            margin-bottom: 10px;
+        }
+
+        /* Class Selector */
+        .highlight {
+            color: blue; /* Blue text color for paragraphs with class "highlight" */
+        }
+
+        /* ID Selector */
+        #special-paragraph {
+            color: green; /* Green text color for the paragraph with ID "special-paragraph" */
+        }
+    </style>
+</head>
+<body>
+    <h1>Using Internal CSS Selectors</h1>
+
+    <!-- Element Selector -->
+    <p>This paragraph is styled using the element selector.</p>
+
+    <!-- Class Selector -->
+    <p class="highlight">This paragraph is styled using the class selector.</p>
+
+    <!-- ID Selector -->
+    <p id="special-paragraph">This paragraph is styled using the ID selector.</p>
+</body>
+</html>

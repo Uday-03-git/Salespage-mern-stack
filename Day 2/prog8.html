@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images with Different Border Styles</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap; /* Allows images to wrap to the next row */
+            justify-content: space-around; /* Adds space between images */
+            margin: 20px;
+            background-color: #070808;
+        }
+
+        .image-container {
+            margin: 15px;
+            text-align: center;
+        }
+
+        img {
+            width: 500px; /* Set a fixed size for the images */
+            height: 250px;
+        }
+
+        .solid-border {
+            border: 10px solid #ff0000; /* Solid red border */
+        }
+
+        .dotted-border {
+            border: 10px dotted #00ff00; /* Dotted green border */
+        }
+
+        .dashed-border {
+            border: 10px dashed #0000ff; /* Dashed blue border */
+        }
+
+        .double-border {
+            border:10px double #ff6600; /* Double orange border */
+        }
+
+        .groove-border {
+            border: 10px groove #663399; /* Groove purple border */
+        }
+
+        .ridge-border {
+            border: 10px ridge #00ced1; /* Ridge cyan border */
+        }
+
+        .inset-border {
+            border: 10px inset #2e8b57; /* Inset green border */
+        }
+
+        .outset-border {
+            border: 10px outset #b22222; /* Outset red border */
+        }
+
+        .none-border {
+            border: none; /* No border */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://tinypng.com/images/social/website.jpg" alt="Solid Border" class="solid-border">
+        <p>Solid Border</p>
+    </div>
+
+    <div class="image-container">
+        <img src="https://media.istockphoto.com/id/157681198/photo/dandelion-seed.jpg?s=612x612&w=0&k=20&c=TfhCtc_Y1oSpdlL7o6yo7BTfgnD0RCy6yF1SgvQO0Jk=" alt="Dotted Border" class="dotted-border">
+        <p>Dotted Border</p>
+    </div>
+
+    <div class="image-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmwla6vUQK67X5KHksARyVrL4Evo509hBcCA&s" alt="Dashed Border" class="dashed-border">
+        <p>Dashed Border</p>
+    </div>
+
+    <div class="image-container">
+        <img src="https://thumbs.dreamstime.com/b/monarch-orange-butterfly-bright-summer-flowers-background-blue-foliage-fairy-garden-macro-artistic-image-monarch-167030287.jpg" alt="Double Border" class="double-border">
+        <p>Double Border</p>
+    </div>
+
+    <div class="image-container">
+        <img src="https://images.ctfassets.net/kftzwdyauwt9/6Hpmny9K2Z8Xxget5bmlWa/66634b4c69faef5600e5ea48f499ba5e/Anastronautridingahorseinaphotorealisticstyle6.jpg?w=3840&q=90&fm=webp" alt="Groove Border" class="groove-border">
+        <p>Groove Border</p>
+    </div>
+
+    <div class="image-container">
+        <img src="https://img.freepik.com/premium-vector/beautiful-landscape-nature-background-images-free-download-freepik-vector_1305309-83.jpg" alt="Ridge Border" class="ridge-border">
+        <p>Ridge Border</p>
+    </div>
+
+    <div class="image-container">
+        <img src="https://cdn.esawebb.org/archives/images/screen/weic2425a.jpg" alt="Inset Border" class="inset-border">
+        <p>Inset Border</p>
+    </div>
+
+    <div class="image-container">
+        <img src="https://th.bing.com/th/id/OIG3.LF0j5JICj4qbfqQ_Oudn" alt="Outset Border" class="outset-border">
+        <p>Outset Border</p>
+    </div>
+
+    <div class="image-container">
+        <img src="https://media.istockphoto.com/id/1065043970/photo/young-woman-sitting-on-edge-looks-out-at-view.jpg?s=612x612&w=0&k=20&c=zXlF6EJwCHDAtEJ_kh8zs6PqliCKZA75F93ffAkJURY=" alt="None Border" class="none-border">
+        <p>No Border</p>
+    </div>
+</body>
+</html>

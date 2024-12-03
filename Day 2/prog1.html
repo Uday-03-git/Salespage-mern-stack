@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product-card h2 {
+            margin: 0 0 10px;
+            font-size: 18px;
+            color: #333;
+        }
+        .product-card p {
+            margin: 0 0 10px;
+            color: #666;
+        }
+        .product-card ul {
+            list-style: disc;
+            padding-left: 20px;
+            color: #444;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>E-Commerce Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#electronics">Electronics</a></li>
+                <li><a href="#furniture">Furniture</a></li>
+                <li><a href="#clothing">Clothing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2 id="electronics">Electronics</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h2>Smartphone X200</h2>
+                <p>The latest smartphone with cutting-edge technology.</p>
+                <ul>
+                    <li>6.5-inch OLED Display</li>
+                    <li>128GB Storage</li>
+                    <li>5000mAh Battery</li>
+                </ul>
+            </div>
+            <div class="product-card">
+                <h2>Wireless Headphones</h2>
+                <p>Immersive sound with noise-cancellation technology.</p>
+                <ul>
+                    <li>Bluetooth 5.0</li>
+                    <li>Up to 30 hours playtime</li>
+                    <li>Lightweight design</li>
+                </ul>
+            </div>
+        </div>
+        <h2 id="furniture">Furniture</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h2>Modern Sofa</h2>
+                <p>Comfortable and stylish sofa for your living room.</p>
+                <ul>
+                    <li>High-quality fabric</li>
+                    <li>Seats 3 people</li>
+                    <li>Available in multiple colors</li>
+                </ul>
+            </div>
+            <div class="product-card">
+                <h2>Wooden Dining Table</h2>
+                <p>Durable and elegant dining table for family meals.</p>
+                <ul>
+                    <li>Solid oak wood</li>
+                    <li>Seats up to 6</li>
+                    <li>Scratch-resistant finish</li>
+                </ul>
+            </div>
+        </div>
+        <h2 id="clothing">Clothing</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h2>Men's Jacket</h2>
+                <p>Stylish and warm jacket for winter.</p>
+                <ul>
+                    <li>Waterproof material</li>
+                    <li>Available in all sizes</li>
+                    <li>Multiple color options</li>
+                </ul>
+            </div>
+            <div class="product-card">
+                <h2>Women's Dress</h2>
+                <p>Elegant dress for special occasions.</p>
+                <ul>
+                    <li>Soft and breathable fabric</li>
+                    <li>Available in various patterns</li>
+                    <li>Machine washable</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 E-Commerce Store. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
